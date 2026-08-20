@@ -1,7 +1,7 @@
 # Opiner Me – Star Rating & Review Form WordPress Plugin
 
-[![Official Website](https://shields.io)](https://opiner.me)
-[![WordPress.org](https://shields.io)](https://wordpress.org)
+[![Official Website](https://img.shields.io/badge/opiner-me-orange)](https://opiner.me)
+[![WordPress.org](https://img.shields.io/badge/github-repo-blue?logo=github)](https://wordpress.org/plugins/opiner-me/)
 
 **Opiner Me** is a lightweight, high-performance WordPress plugin designed to add elegant star ratings and custom review forms to your website. It comes with a built-in admin panel for moderation and automatically generates JSON-LD Schema to display rich snippets in search engines.
 
