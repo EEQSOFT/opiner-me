@@ -1,9 +1,9 @@
-# Opiner Me – Star Rating & Review Form WordPress Plugin
+# Opiner Me – Lightweight Star Rating & Review Form WordPress Plugin
 
 [![Official Website](https://img.shields.io/badge/opiner-me-orange)](https://opiner.me)
-[![WordPress.org](https://img.shields.io/badge/github-repo-blue?logo=github)](https://wordpress.org/plugins/opiner-me/)
+[![WordPress.org](https://img.shields.io/badge/wordpress-repo-blue?logo=wordpress)](https://wordpress.org/plugins/opiner-me/)
 
-**Opiner Me** is a lightweight, high-performance WordPress plugin designed to add elegant star ratings and custom review forms to your website. It comes with a built-in admin panel for moderation and automatically generates JSON-LD Schema to display rich snippets in search engines.
+**Opiner Me** is a lightweight, high-performance WordPress plugin designed to add elegant star ratings and custom review forms to your website. It comes with a built-in admin panel for moderation and automatically generates JSON‑LD Schema to display rich snippets in search engines.
 
 ---
 
@@ -12,7 +12,7 @@
 * **Frontend Review Form:** Easily customizable and user-friendly form for collecting testimonials.
 * **Star Rating System:** Clean visual presentation for ratings.
 * **Admin Moderation Panel:** Approve, edit, or delete reviews before they go live.
-* **SEO Optimized:** Automated JSON-LD Schema integration for better search engine visibility.
+* **SEO Optimized:** Automated JSON‑LD Schema integration for better search engine visibility.
 
 ## 🌐 Official Resources
 
