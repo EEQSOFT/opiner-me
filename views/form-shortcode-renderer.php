@@ -3,7 +3,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 
-<form method="post" class="opiner-me-form">
+<form action="#opiner-me-msg" method="post" class="opiner-me-form">
     <?php wp_nonce_field( 'opiner_me_add_opinion', 'om_nonce' ); ?>
 
     <input type="hidden" name="om_post_id" value="<?php echo esc_attr( intval( $post->ID ) ); ?>" />

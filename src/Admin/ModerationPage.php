@@ -14,6 +14,8 @@ class ModerationPage {
     private string $table_name;
 
     public function __construct() {
+        add_action( 'admin_init', array( $this, 'handle_actions' ) );
+
         global $wpdb;
 
         $this->table      = $wpdb->prefix . 'om_opinions';
@@ -21,7 +23,26 @@ class ModerationPage {
     }
 
     public function render(): void {
-        $this->handle_actions();
+        $notice = get_transient( 'opiner_me_notice' );
+
+        if ( $notice ) {
+            delete_transient( 'opiner_me_notice' );
+
+            switch ( $notice ) {
+                case 'activated':
+                    $this->render_notice( __( 'Opinion activated.', 'opiner-me' ) );
+
+                    break;
+                case 'deactivated':
+                    $this->render_notice( __( 'Opinion deactivated.', 'opiner-me' ) );
+
+                    break;
+                case 'deleted':
+                    $this->render_notice( __( 'Opinion deleted.', 'opiner-me' ) );
+
+                    break;
+            }
+        }
 
         $pagination = $this->get_pagination_data();
         $opinions   = $this->get_opinions( $pagination['per_page'], $pagination['offset'] );
@@ -36,7 +57,7 @@ class ModerationPage {
         echo '</div>';
     }
 
-    private function handle_actions(): void {
+    public function handle_actions(): void {
         if ( ! current_user_can( 'manage_options' ) ) {
             return;
         }
@@ -59,7 +80,13 @@ class ModerationPage {
             if ( ! empty( $updated ) ) {
                 RatingService::update( $post );
 
-                $this->render_notice( __( 'Opinion activated.', 'opiner-me' ) );
+                set_transient( 'opiner_me_notice', 'activated', 30 );
+
+                $paged = isset( $_GET['paged'] ) ? intval( $_GET['paged'] ) : 1;
+
+                wp_safe_redirect( admin_url( 'admin.php?page=opiner-me-moderation&paged=' . $paged ) );
+
+                exit;
             }
         }
 
@@ -79,7 +106,13 @@ class ModerationPage {
             if ( ! empty( $updated ) ) {
                 RatingService::update( $post );
 
-                $this->render_notice( __( 'Opinion deactivated.', 'opiner-me' ) );
+                set_transient( 'opiner_me_notice', 'deactivated', 30 );
+
+                $paged = isset( $_GET['paged'] ) ? intval( $_GET['paged'] ) : 1;
+
+                wp_safe_redirect( admin_url( 'admin.php?page=opiner-me-moderation&paged=' . $paged ) );
+
+                exit;
             }
         }
 
@@ -99,7 +132,13 @@ class ModerationPage {
             if ( ! empty( $deleted ) ) {
                 RatingService::update( $post );
 
-                $this->render_notice( __( 'Opinion deleted.', 'opiner-me' ) );
+                set_transient( 'opiner_me_notice', 'deleted', 30 );
+
+                $paged = isset( $_GET['paged'] ) ? intval( $_GET['paged'] ) : 1;
+
+                wp_safe_redirect( admin_url( 'admin.php?page=opiner-me-moderation&paged=' . $paged ) );
+
+                exit;
             }
         }
     }

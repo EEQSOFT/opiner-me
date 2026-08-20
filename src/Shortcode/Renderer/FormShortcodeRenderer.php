@@ -62,7 +62,7 @@ class FormShortcodeRenderer implements ShortcodeHandlerInterface {
                 delete_transient( $unique );
 
                 if ( is_wp_error( $saved['errors'] ?? '' ) ) {
-                    echo '<div class="opiner-me-error">';
+                    echo '<div id="opiner-me-msg" class="opiner-me-error">';
 
                     foreach ( $saved['errors']->get_error_messages() as $message ) {
                         echo esc_html( $message ) . '<br />';
@@ -73,7 +73,7 @@ class FormShortcodeRenderer implements ShortcodeHandlerInterface {
             }
 
             if ( $msg === 'success' ) {
-                echo '<div class="opiner-me-success">' . nl2br( esc_html__( "Thank you for your opinion!\nYour review may require approval.", 'opiner-me' ) ) . '</div>';
+                echo '<div id="opiner-me-msg" class="opiner-me-success">' . nl2br( esc_html__( "Thank you for your opinion!\nYour review may require approval.", 'opiner-me' ) ) . '</div>';
             }
         }
 

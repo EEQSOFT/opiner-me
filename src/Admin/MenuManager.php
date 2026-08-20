@@ -19,7 +19,8 @@ class MenuManager {
             'manage_options',
             'opiner-me',
             null,
-            'dashicons-star-filled'
+            'dashicons-star-filled',
+            26
         );
 
         add_submenu_page(

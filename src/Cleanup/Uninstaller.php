@@ -18,7 +18,7 @@ class Uninstaller {
     private static function delete_options(): void {
         $options = array(
             // 'opiner_me_db_version',
-            'opiner_me_options'
+            // 'opiner_me_options'
         );
 
         foreach ( $options as $key ) {
@@ -27,9 +27,14 @@ class Uninstaller {
     }
 
     private static function delete_transients(): void {
-        $unique = 'opiner_me_form_' . get_current_user_id();
+        $transients = array(
+            'opiner_me_form_' . get_current_user_id(),
+            'opiner_me_notice'
+        );
 
-        delete_transient( $unique );
+        foreach ( $transients as $key ) {
+            delete_transient( $key );
+        }
     }
 
     private static function delete_logs(): void {

@@ -8,7 +8,7 @@ Tags: rating, star-rating, reviews, review-form, json-ld
 Requires at least: 6.0
 Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,13 +26,13 @@ Plugin live demo: <a href="https://opiner.me/live-demo">Check it out here</a>
 Installation video: <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a>
 
 == Features ==
-* Lightweight star rating and review plugin for WordPress
-* Opinion and feedback form that fits any theme
-* Simple shortcodes to display form, rating, reviews, and schema
-* Built-in spam protection via SpamGuard module
-* JSON-LD review schema for better SEO and rich results
-* Clean admin panel to manage user opinions and ratings
-* No external scripts, no bloat, performance-friendly
+* Lightweight star rating and review plugin for WordPress.
+* Opinion and feedback form that fits any theme.
+* Simple shortcodes to display form, rating, reviews, and schema.
+* Built-in spam protection via SpamGuard module.
+* JSON-LD review schema for better SEO and rich results.
+* Clean admin panel to manage user opinions and ratings.
+* No external scripts, no bloat - performance-friendly.
 
 == Why choose Opiner Me? ==
 * **Lightweight and fast** – no unnecessary code, no bloat, no performance impact.
@@ -45,22 +45,22 @@ Installation video: <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch 
 * **Privacy-friendly** – all opinions stay in your database; nothing is sent to external servers.
 
 == Use Cases ==
-* Add star ratings to posts, pages, or custom post types
-* Collect quick user reviews with a simple opinion form
-* Display ratings and review lists anywhere using shortcodes
-* Improve SEO with JSON-LD review schema for rich results
-* Gather lightweight feedback without heavy review plugins
-* Add a minimal rating widget to service pages or portfolios
+* Add star ratings to posts, pages, or custom post types.
+* Collect quick user reviews with a simple opinion form.
+* Display ratings and review lists anywhere using shortcodes.
+* Improve SEO with JSON-LD review schema for rich results.
+* Gather lightweight feedback without heavy review plugins.
+* Add a minimal rating widget to service pages or portfolios.
 
 == Shortcodes ==
 [opiner_me] – display form and list together
 [opiner_me_form] – display only opinion form
 [opiner_me_list] – display submitted reviews
 [opiner_me_rating] – display average rating
-[opiner_me_schema] – display JSON-LD
+[opiner_me_schema] – output JSON-LD
 
 == Video ==
-Quick installation video (2.5 minutes): <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a>
+Quick installation video: <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a>
 
 This short video shows how to install and use Opiner Me in under 3 minutes.
 
@@ -109,39 +109,46 @@ Yes. Opiner Me loads no external scripts and avoids unnecessary assets. It is op
 == Performance ==
 Opiner Me is optimized for speed and minimal footprint:
 
-* No external scripts or heavy assets
-* Lightweight codebase designed for fast loading
-* Minimal database usage for storing reviews and ratings
-* Works efficiently on shared hosting environments
-* Zero impact on Core Web Vitals and page performance
+* No external scripts or heavy assets.
+* Lightweight codebase designed for fast loading.
+* Minimal database usage for storing reviews and ratings.
+* Works efficiently on shared hosting environments.
+* Zero impact on Core Web Vitals and page performance.
 
 == Changelog ==
+= 1.1.0 =
+* Added: Star icon in the top admin bar, placed right after the Comments icon, including a counter showing the number of pending opinions/ratings.
+* Added: Red notification badge in the left admin menu showing the number of new or pending opinions/ratings. The "Opiner Me" menu item was moved directly under Comments.
+* Improved: "Blocked words" field in the plugin settings changed from a single-line text input to a textarea for better visibility and easier editing.
+* Improved: Opinion/rating form now scrolls directly to the success or error message after submission instead of jumping to the top of the page.
+* Fixed: Uninstalling the plugin no longer resets the Settings section, ensuring that "Blocked words" are preserved after reinstalling.
+
 = 1.0.1 =
-* Fixed: Removed unwanted backslashes in opinion text and author fields using wp_unslash()
-* Improved: Cleaner output handling for user-submitted reviews and ratings
-* Improved: Minor UI adjustments in the admin panel
-* Updated: Internal code structure for better stability and readability
+* Fixed: Removed unwanted backslashes in opinion text and author fields using wp_unslash().
+* Improved: Cleaner output handling for user-submitted reviews and ratings.
+* Improved: Minor UI adjustments in the admin panel.
+* Updated: Internal code structure for better stability and readability.
 
 = 1.0.0 =
-* Initial release with opinion form, star rating, review list, JSON-LD schema, SpamGuard, and shortcode support
+* Initial release with opinion form, star rating, review list, JSON-LD schema, SpamGuard, and shortcode support.
 
 == Compatibility ==
 Opiner Me is fully compatible with modern WordPress environments.
 
-* Tested with WordPress versions 6.0-6.9
-* Requires PHP 8.0 or higher
-* Works with any theme thanks to lightweight, theme-agnostic design
-* Compatible with classic editor and block editor (Gutenberg)
+* Tested with WordPress versions 6.0-6.9.
+* Requires PHP 8.0 or higher.
+* Works with any theme thanks to lightweight, theme-agnostic design.
+* Compatible with classic editor and block editor (Gutenberg).
 
 == Privacy ==
-Opiner Me does not collect, store, or transmit any personal data to external servers.
-All submitted opinions, ratings, and review content remain in your WordPress database.
-No tracking, analytics, or third-party requests are used by the plugin.
+Opiner Me does not collect, store, or transmit any personal data to external servers. All submitted opinions, ratings, and review content remain in your WordPress database. No tracking, analytics, or third-party requests are used by the plugin.
 
 == Upgrade Notice ==
+= 1.1.0 =
+This update introduces visible notifications for new opinions in both the top admin bar and the left admin menu, improves the settings interface, and enhances the opinion form behavior. A recommended update for all users.
+
 = 1.0.1 =
-Fixes unwanted backslashes in opinion text and author fields.
-Improves output handling for user reviews and ratings.
+Fixes unwanted backslashes in opinion text and author fields. Improves output handling for user reviews and ratings.
 
 = 1.0.0 =
 Initial release of the opinion form, star rating, review list, JSON-LD schema, and shortcodes.

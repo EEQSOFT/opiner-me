@@ -6,7 +6,7 @@ namespace OpinerMe\Plugin;
 
 defined( 'ABSPATH' ) || exit;
 
-use OpinerMe\Admin\{ AssetsManager, MenuManager, SettingsPanel };
+use OpinerMe\Admin\{ AdminBarIcon, AssetsManager, MenuManager, SettingsPanel };
 use OpinerMe\DB\SchemaManager;
 use OpinerMe\Diagnostics\{ Logger, LogViewer };
 use OpinerMe\Frontend\{
@@ -36,6 +36,7 @@ class Plugin {
         $this->setup_logging();
         $this->setup_database();
         $this->setup_admin();
+        $this->setup_admin_bar();
         $this->setup_frontend();
         $this->setup_shortcode_renderer();
     }
@@ -67,6 +68,12 @@ class Plugin {
 
             LogViewer::register();
         }
+    }
+
+    private function setup_admin_bar(): void {
+        $admin_bar = new AdminBarIcon();
+
+        $admin_bar->register();
     }
 
     private function setup_frontend(): void {
