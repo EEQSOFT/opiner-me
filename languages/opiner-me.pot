@@ -1,0 +1,374 @@
+# Copyright (C) 2025 Opiner Me
+# This file is distributed under the same license as the Opiner Me package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Opiner Me 1.0.0\n"
+"Report-Msgid-Bugs-To: https://opiner.me\n"
+"POT-Creation-Date: 2025-10-16 18:04:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: qSandbox\n"
+"X-Domain: opiner-me\n"
+
+#: src/Admin/MenuManager.php src/Admin/MenuManager.php
+#: src/Admin/MenuManager.php
+msgid "Main Page"
+msgstr ""
+
+#: src/Admin/MenuManager.php src/Admin/SettingsPage.php
+msgid "Plugin Settings"
+msgstr ""
+
+#: src/Admin/MenuManager.php
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/MenuManager.php src/Admin/ModerationPage.php
+msgid "Opinion Moderation"
+msgstr ""
+
+#: src/Admin/MenuManager.php
+msgid "Moderation"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Opinion activated."
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Opinion deactivated."
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Opinion deleted."
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "%d opinions"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "No reviews."
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "ID"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Post ID"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Author"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Rating"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Content"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "IP"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Date"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Active"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Activation"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Action"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "No"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Activate"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Deactivate"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Delete this opinion?"
+msgstr ""
+
+#: src/Admin/ModerationPage.php
+msgid "Delete"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Main Settings"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Automatically approve reviews"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Number of reviews per page"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Review min length"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Review max length"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Blocked words"
+msgstr ""
+
+#: src/Admin/SettingsRegistry.php
+msgid "Display JSON-LD Schema"
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "The number of reviews must be between 1 and 1000."
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "The review min length must be shorter than the review max length."
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "The length of reviews must be between 10 and 1000."
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "Enter the blocked words."
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "Select JSON-LD Schema."
+msgstr ""
+
+#: src/Admin/SettingsValidator.php
+msgid "Settings saved."
+msgstr ""
+
+#: src/Diagnostics/LogViewer.php src/Diagnostics/LogViewer.php
+#: src/Diagnostics/LogViewer.php
+msgid "Logs"
+msgstr ""
+
+#: src/Diagnostics/LogViewer.php
+msgid "Logs have been cleared."
+msgstr ""
+
+#: src/Diagnostics/LogViewer.php
+msgid "Clear logs"
+msgstr ""
+
+#: src/Diagnostics/LogViewer.php
+msgid "No log file."
+msgstr ""
+
+#: src/Frontend/AjaxController.php
+msgid "No valid post ID"
+msgstr ""
+
+#: src/Frontend/AjaxController.php
+msgid "Post not found"
+msgstr ""
+
+#: src/Frontend/SpamGuard.php
+msgid "Please wait 5 minutes before adding another review."
+msgstr ""
+
+#: src/Frontend/SpamGuard.php
+msgid "You have exceeded the limit of opinions added."
+msgstr ""
+
+#: src/Frontend/SpamGuard.php
+msgid "You can only post one review per day for this post."
+msgstr ""
+
+#: src/Frontend/SpamGuard.php
+msgid "Spam protection"
+msgstr ""
+
+#: src/Shortcode/Renderer/AllShortcodeRenderer.php
+#: src/Shortcode/Renderer/FormShortcodeRenderer.php
+#: src/Shortcode/Renderer/ListShortcodeRenderer.php
+#: src/Shortcode/Renderer/RatingShortcodeRenderer.php
+msgid "Invalid post ID."
+msgstr ""
+
+#: src/Shortcode/Renderer/FormShortcodeRenderer.php
+msgid ""
+"Thank you for your opinion!\n"
+"Your review may require approval."
+msgstr ""
+
+#: src/Shortcode/Renderer/ListShortcodeRenderer.php
+msgid "Load more opinions"
+msgstr ""
+
+#: src/Shortcode/Renderer/ListShortcodeRenderer.php
+msgid "Show more"
+msgstr ""
+
+#: src/Shortcode/Renderer/RatingShortcodeRenderer.php
+msgid "Average rating:"
+msgstr ""
+
+#: src/Shortcode/Renderer/RatingShortcodeRenderer.php
+msgid "votes"
+msgstr ""
+
+#: src/Validation/OpinionValidator.php
+msgid "Name contains invalid characters."
+msgstr ""
+
+#: src/Validation/OpinionValidator.php
+msgid "Enter your name (1-50)."
+msgstr ""
+
+#: src/Validation/OpinionValidator.php
+msgid "Select your rating (1-5)."
+msgstr ""
+
+#: src/Validation/OpinionValidator.php
+msgid "Enter your opinion (%1$d-%2$d)."
+msgstr ""
+
+#: src/Validation/OpinionValidator.php
+msgid "Banned words found:"
+msgstr ""
+
+#: views/field-blocked-words.php
+msgid "E.g. \"ugly, scam, spam\""
+msgstr ""
+
+#: views/field-display-schema.php
+msgid "No JSON-LD Schema"
+msgstr ""
+
+#: views/field-display-schema.php
+msgid "Average rating only"
+msgstr ""
+
+#: views/field-display-schema.php
+msgid "Rating with opinions list"
+msgstr ""
+
+#: views/form-shortcode-renderer.php
+msgid "Your name:"
+msgstr ""
+
+#: views/form-shortcode-renderer.php
+msgid "Your rating:"
+msgstr ""
+
+#: views/form-shortcode-renderer.php
+msgid "Your opinion:"
+msgstr ""
+
+#: views/form-shortcode-renderer.php
+msgid "Submit"
+msgstr ""
+
+#: views/main-page.php
+msgid "Plugin shortcodes"
+msgstr ""
+
+#: views/main-page.php
+msgid "Use the shortcodes below to display review and rating modules on any page or post."
+msgstr ""
+
+#: views/main-page.php
+msgid "This shortcode displays the average review rating, number of votes, and stars."
+msgstr ""
+
+#: views/main-page.php
+msgid "Form"
+msgstr ""
+
+#: views/main-page.php
+msgid "This shortcode displays a form for adding reviews."
+msgstr ""
+
+#: views/main-page.php
+msgid "List"
+msgstr ""
+
+#: views/main-page.php
+msgid "This shortcode displays a list of reviews added via a form."
+msgstr ""
+
+#: views/main-page.php
+msgid "Schema"
+msgstr ""
+
+#: views/main-page.php
+msgid "This shortcode adds JSON-LD Schema."
+msgstr ""
+
+#: views/main-page.php
+msgid "All in One"
+msgstr ""
+
+#: views/main-page.php
+msgid "Instead of adding all of the above, you can add just one shortcode to your post or page."
+msgstr ""
+
+#: views/main-page.php
+msgid "Custom Parameters"
+msgstr ""
+
+#: views/main-page.php
+msgid "E.g. for the \"opiner_me_rating\" shortcode you can provide \"post_id\", \"show_count\", and \"show_stars\"."
+msgstr ""
+
+#: views/main-page.php
+msgid "Visit the Opiner.Me website"
+msgstr ""
+
+#: views/main-page.php
+msgid "Donate for Coffee"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Opiner Me"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://opiner.me"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "EEQSOFT"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.eeqsoft.com"
+msgstr ""

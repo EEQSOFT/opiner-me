@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Opiner Me 1.0.0\n"
+"Report-Msgid-Bugs-To: https://opiner.me\n"
+"POT-Creation-Date: 2025-10-16 18:04:59+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: opiner-me\n"
+
+msgid "Main Page"
+msgstr "Strona główna"
+
+msgid "Plugin Settings"
+msgstr "Ustawienia wtyczki"
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Opinion Moderation"
+msgstr "Moderacja opinii"
+
+msgid "Moderation"
+msgstr "Moderacja"
+
+msgid "Opinion activated."
+msgstr "Opinia została aktywowana."
+
+msgid "Opinion deactivated."
+msgstr "Opinia została dezaktywowana."
+
+msgid "Opinion deleted."
+msgstr "Opinia została usunięta."
+
+msgid "%d opinions"
+msgstr "%d opinii"
+
+msgid "No reviews."
+msgstr "Brak opinii."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Post ID"
+msgstr "ID wpisu"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Rating"
+msgstr "Ocena"
+
+msgid "Content"
+msgstr "Treść"
+
+msgid "IP"
+msgstr "Adres IP"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Active"
+msgstr "Aktywna"
+
+msgid "Activation"
+msgstr "Aktywacja"
+
+msgid "Action"
+msgstr "Akcja"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Activate"
+msgstr "Aktywuj"
+
+msgid "Deactivate"
+msgstr "Dezaktywuj"
+
+msgid "Delete this opinion?"
+msgstr "Usunąć tę opinię?"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Main Settings"
+msgstr "Główne ustawienia"
+
+msgid "Automatically approve reviews"
+msgstr "Automatycznie zatwierdzaj opinie"
+
+msgid "Number of reviews per page"
+msgstr "Liczba opinii na stronę"
+
+msgid "Review min length"
+msgstr "Minimalna długość opinii"
+
+msgid "Review max length"
+msgstr "Maksymalna długość opinii"
+
+msgid "Blocked words"
+msgstr "Zablokowane słowa"
+
+msgid "Display JSON-LD Schema"
+msgstr "Wyświetl JSON-LD Schema"
+
+msgid "The number of reviews must be between 1 and 1000."
+msgstr "Liczba opinii musi mieścić się w zakresie od 1 do 1000."
+
+msgid "The review min length must be shorter than the review max length."
+msgstr "Minimalna długość opinii musi być mniejsza niż maksymalna."
+
+msgid "The length of reviews must be between 10 and 1000."
+msgstr "Długość opinii musi wynosić od 10 do 1000 znaków."
+
+msgid "Enter the blocked words."
+msgstr "Wprowadź zablokowane słowa."
+
+msgid "Select JSON-LD Schema."
+msgstr "Wybierz JSON-LD Schema."
+
+msgid "Settings saved."
+msgstr "Ustawienia zostały zapisane."
+
+msgid "Logs"
+msgstr "Logi"
+
+msgid "Logs have been cleared."
+msgstr "Logi zostały wyczyszczone."
+
+msgid "Clear logs"
+msgstr "Wyczyść logi"
+
+msgid "No log file."
+msgstr "Brak pliku logów."
+
+msgid "No valid post ID"
+msgstr "Brak prawidłowego ID wpisu"
+
+msgid "Post not found"
+msgstr "Nie znaleziono wpisu"
+
+msgid "Please wait 5 minutes before adding another review."
+msgstr "Poczekaj 5 minut zanim dodasz kolejną opinię."
+
+msgid "You have exceeded the limit of opinions added."
+msgstr "Przekroczyłeś limit dodawanych opinii."
+
+msgid "You can only post one review per day for this post."
+msgstr "Możesz opublikować tylko jedną opinię dla tego wpisu dziennie."
+
+msgid "Spam protection"
+msgstr "Ochrona przed spamem"
+
+msgid "Invalid post ID."
+msgstr "Nieprawidłowe ID wpisu."
+
+msgid ""
+"Thank you for your opinion!\n"
+"Your review may require approval."
+msgstr ""
+"Dziękujemy za opinię!\n"
+"Twoja recenzja może wymagać zatwierdzenia."
+
+msgid "Load more opinions"
+msgstr "Załaduj więcej opinii"
+
+msgid "Show more"
+msgstr "Pokaż więcej"
+
+msgid "Average rating:"
+msgstr "Średnia ocena:"
+
+msgid "votes"
+msgstr "głosów"
+
+msgid "Name contains invalid characters."
+msgstr "Imię zawiera nieprawidłowe znaki."
+
+msgid "Enter your name (1-50)."
+msgstr "Wpisz swoje imię (1-50)."
+
+msgid "Select your rating (1-5)."
+msgstr "Wybierz swoją ocenę (1-5)."
+
+msgid "Enter your opinion (%1$d-%2$d)."
+msgstr "Wpisz swoją opinię (%1$d-%2$d)."
+
+msgid "Banned words found:"
+msgstr "Znaleziono zabronione słowa:"
+
+msgid "E.g. \"ugly, scam, spam\""
+msgstr "Np. „brzydki, oszustwo, spam”"
+
+msgid "No JSON-LD Schema"
+msgstr "Brak JSON-LD Schema"
+
+msgid "Average rating only"
+msgstr "Tylko średnia ocena"
+
+msgid "Rating with opinions list"
+msgstr "Ocena z listą opinii"
+
+msgid "Your name:"
+msgstr "Twoje imię:"
+
+msgid "Your rating:"
+msgstr "Twoja ocena:"
+
+msgid "Your opinion:"
+msgstr "Twoja opinia:"
+
+msgid "Submit"
+msgstr "Wyślij"
+
+msgid "Plugin shortcodes"
+msgstr "Shortcody wtyczki"
+
+msgid "Use the shortcodes below to display review and rating modules on any page or post."
+msgstr "Użyj poniższych shortcode’ów, aby wyświetlić moduły opinii i ocen na dowolnej stronie lub wpisie."
+
+msgid "This shortcode displays the average review rating, number of votes, and stars."
+msgstr "Ten shortcode wyświetla średnią ocenę, liczbę głosów i gwiazdki."
+
+msgid "Form"
+msgstr "Formularz"
+
+msgid "This shortcode displays a form for adding reviews."
+msgstr "Ten shortcode wyświetla formularz dodawania opinii."
+
+msgid "List"
+msgstr "Lista"
+
+msgid "This shortcode displays a list of reviews added via a form."
+msgstr "Ten shortcode wyświetla listę opinii dodanych przez formularz."
+
+msgid "Schema"
+msgstr "Schema"
+
+msgid "This shortcode adds JSON-LD Schema."
+msgstr "Ten shortcode dodaje JSON-LD Schema."
+
+msgid "All in One"
+msgstr "Wszystko w jednym"
+
+msgid "Instead of adding all of the above, you can add just one shortcode to your post or page."
+msgstr "Zamiast dodawać wszystkie powyższe, możesz dodać jeden shortcode do wpisu lub strony."
+
+msgid "Custom Parameters"
+msgstr "Parametry niestandardowe"
+
+msgid "E.g. for the \"opiner_me_rating\" shortcode you can provide \"post_id\", \"show_count\", and \"show_stars\"."
+msgstr "Np. dla shortcode’u „opiner_me_rating” możesz podać „post_id”, „show_count” i „show_stars”."
+
+msgid "Visit the Opiner.Me website"
+msgstr "Odwiedź stronę Opiner.Me"
+
+msgid "Donate for Coffee"
+msgstr "Postaw kawę"
+
+msgid "Opiner Me"
+msgstr "Opiner Me"
+
+msgid "https://opiner.me"
+msgstr "https://opiner.me"
+
+msgid "Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema."
+msgstr "Prosta wtyczka do ocen gwiazdkowych i opinii z formularzem frontendowym, panelem administracyjnym i JSON-LD Schema."
+
+msgid "EEQSOFT"
+msgstr "EEQSOFT"
+
+msgid "https://www.eeqsoft.com"
+msgstr "https://www.eeqsoft.com"
