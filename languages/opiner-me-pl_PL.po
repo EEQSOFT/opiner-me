@@ -1,282 +1,554 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Opiner Me 1.0.0\n"
-"Report-Msgid-Bugs-To: https://opiner.me\n"
-"POT-Creation-Date: 2025-10-16 18:04:59+00:00\n"
-"PO-Revision-Date: \n"
+"Project-Id-Version: Opiner Me 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/opiner-me\n"
+"POT-Creation-Date: 2026-05-14T19:17:46+02:00\n"
+"PO-Revision-Date: 2026-05-14 19:59+0200\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: Polish\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
 "X-Domain: opiner-me\n"
 
+#. Plugin Name of the plugin
+#: opiner-me.php
+msgid "Opiner Me"
+msgstr "Opiner Me"
+
+#. Plugin URI of the plugin
+#: opiner-me.php
+msgid "https://opiner.me"
+msgstr "https://opiner.me"
+
+#. Description of the plugin
+#: opiner-me.php
+msgid "Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema."
+msgstr "Prosta wtyczka do ocen gwiazdkowych i opinii z formularzem frontendowym, panelem administratora i obsługą JSON-LD Schema."
+
+#. Author of the plugin
+#: opiner-me.php
+msgid "EEQSOFT"
+msgstr "EEQSOFT"
+
+#. Author URI of the plugin
+#: opiner-me.php
+msgid "https://www.eeqsoft.com"
+msgstr "https://www.eeqsoft.com"
+
+#: free/src/Admin/LicenseManager.php:33 free/src/Admin/LicenseManager.php:34
+#: free/src/Admin/LicenseManager.php:48
+msgid "License PRO"
+msgstr "Licencja PRO"
+
+#: free/src/Admin/LicenseManager.php:56
+msgid "License key"
+msgstr "Klucz licencyjny"
+
+#: free/src/Admin/LicenseManager.php:64
+msgid "Enter the key you received after purchasing Opiner Me PRO."
+msgstr "Wprowadź klucz, który otrzymałeś po zakupie Opiner Me PRO."
+
+#: free/src/Admin/LicenseManager.php:70
+msgid "Save and verify"
+msgstr "Zapisz i zweryfikuj"
+
+#: free/src/Admin/LicenseManager.php:73
+msgid "License status"
+msgstr "Status licencji"
+
+#. translators: %s: License expiration date
+#: free/src/Admin/LicenseManager.php:81
+#, php-format
+msgid "Expires: %s"
+msgstr "Wygasa: %s"
+
+#: free/src/Admin/LicenseManager.php:86 free/views/main-page.php:64
+msgid "Buy"
+msgstr "Kup"
+
+#: free/src/Admin/MenuManager.php:17 free/src/Admin/MenuManager.php:28
+#: free/src/Admin/MenuManager.php:29
 msgid "Main Page"
 msgstr "Strona główna"
 
+#: free/src/Admin/MenuManager.php:37 free/src/Admin/SettingsPage.php:13
 msgid "Plugin Settings"
 msgstr "Ustawienia wtyczki"
 
+#: free/src/Admin/MenuManager.php:38
 msgid "Settings"
 msgstr "Ustawienia"
 
-msgid "Opinion Moderation"
+#: free/src/Admin/MenuManager.php:46 free/src/Admin/ModerationPage.php:51
+msgid "Review Moderation"
 msgstr "Moderacja opinii"
 
+#: free/src/Admin/MenuManager.php:47
 msgid "Moderation"
 msgstr "Moderacja"
 
-msgid "Opinion activated."
+#: free/src/Admin/ModerationPage.php:33
+msgid "Review activated."
 msgstr "Opinia została aktywowana."
 
-msgid "Opinion deactivated."
+#: free/src/Admin/ModerationPage.php:37
+msgid "Review deactivated."
 msgstr "Opinia została dezaktywowana."
 
-msgid "Opinion deleted."
+#: free/src/Admin/ModerationPage.php:41
+msgid "Review deleted."
 msgstr "Opinia została usunięta."
 
-msgid "%d opinions"
+#. translators: %d is the number of submitted opinions.
+#: free/src/Admin/ModerationPage.php:194
+#, php-format
+msgid "%d reviews"
 msgstr "%d opinii"
 
-msgid "No reviews."
-msgstr "Brak opinii."
-
+#: free/src/Admin/ModerationPage.php:211
 msgid "ID"
 msgstr "ID"
 
+#: free/src/Admin/ModerationPage.php:212 pro/src/Admin/EditReview.php:102
 msgid "Post ID"
 msgstr "ID wpisu"
 
+#: free/src/Admin/ModerationPage.php:213 pro/src/Admin/EditReview.php:112
 msgid "Author"
 msgstr "Autor"
 
+#: free/src/Admin/ModerationPage.php:214 free/views/main-page.php:11
+#: pro/src/Admin/EditReview.php:120
 msgid "Rating"
 msgstr "Ocena"
 
+#: free/src/Admin/ModerationPage.php:215 pro/src/Admin/EditReview.php:116
 msgid "Content"
 msgstr "Treść"
 
+#: free/src/Admin/ModerationPage.php:216
 msgid "IP"
-msgstr "Adres IP"
+msgstr "IP"
 
+#: free/src/Admin/ModerationPage.php:217
 msgid "Date"
 msgstr "Data"
 
+#: free/src/Admin/ModerationPage.php:218 pro/src/Admin/EditReview.php:124
 msgid "Active"
 msgstr "Aktywna"
 
+#: free/src/Admin/ModerationPage.php:219
 msgid "Activation"
 msgstr "Aktywacja"
 
+#: free/src/Admin/ModerationPage.php:220
 msgid "Action"
 msgstr "Akcja"
 
+#: free/src/Admin/ModerationPage.php:224
+#: pro/src/Widgets/Slider/SliderWidget.php:45
+msgid "No reviews."
+msgstr "Brak opinii."
+
+#: free/src/Admin/ModerationPage.php:245
 msgid "Yes"
 msgstr "Tak"
 
+#: free/src/Admin/ModerationPage.php:245
 msgid "No"
 msgstr "Nie"
 
-msgid "Activate"
-msgstr "Aktywuj"
-
+#: free/src/Admin/ModerationPage.php:255
 msgid "Deactivate"
 msgstr "Dezaktywuj"
 
-msgid "Delete this opinion?"
+#: free/src/Admin/ModerationPage.php:255
+msgid "Activate"
+msgstr "Aktywuj"
+
+#: free/src/Admin/ModerationPage.php:269
+msgid "Edit"
+msgstr "Edytuj"
+
+#: free/src/Admin/ModerationPage.php:279
+msgid "Delete this review?"
 msgstr "Usunąć tę opinię?"
 
+#: free/src/Admin/ModerationPage.php:279
 msgid "Delete"
 msgstr "Usuń"
 
-msgid "Main Settings"
+#. translators: %d: Reviews added
+#: free/src/Admin/SettingsPage.php:33
+#, php-format
+msgid "Successfully imported %d reviews."
+msgstr "Pomyślnie zaimportowano %d opinii."
+
+#. translators: %d: Reviews skipped
+#: free/src/Admin/SettingsPage.php:44
+#, php-format
+msgid "Skipped %d duplicate reviews."
+msgstr "Pominięto %d zduplikowanych opinii."
+
+#: free/src/Admin/SettingsPage.php:53
+msgid "Import completed, but no reviews were added."
+msgstr "Import zakończony, ale nie dodano żadnych opinii."
+
+#: free/src/Admin/SettingsPage.php:61
+msgid "Import failed. Please check the JSON file."
+msgstr "Import nie powiódł się. Sprawdź plik JSON."
+
+#: free/src/Admin/SettingsPage.php:80
+msgid "Import / Export reviews (PRO)"
+msgstr "Import / Eksport opinii (PRO)"
+
+#: free/src/Admin/SettingsRegistry.php:25
+msgid "Main settings"
 msgstr "Główne ustawienia"
 
+#: free/src/Admin/SettingsRegistry.php:32
 msgid "Automatically approve reviews"
 msgstr "Automatycznie zatwierdzaj opinie"
 
+#: free/src/Admin/SettingsRegistry.php:40
 msgid "Number of reviews per page"
 msgstr "Liczba opinii na stronę"
 
+#: free/src/Admin/SettingsRegistry.php:48
 msgid "Review min length"
 msgstr "Minimalna długość opinii"
 
+#: free/src/Admin/SettingsRegistry.php:56
 msgid "Review max length"
 msgstr "Maksymalna długość opinii"
 
+#: free/src/Admin/SettingsRegistry.php:64
 msgid "Blocked words"
 msgstr "Zablokowane słowa"
 
+#: free/src/Admin/SettingsRegistry.php:72
 msgid "Display JSON-LD Schema"
 msgstr "Wyświetl JSON-LD Schema"
 
+#: free/src/Admin/SettingsValidator.php:24
 msgid "The number of reviews must be between 1 and 1000."
-msgstr "Liczba opinii musi mieścić się w zakresie od 1 do 1000."
+msgstr "Liczba opinii musi mieścić się w zakresie 1–1000."
 
+#: free/src/Admin/SettingsValidator.php:39
 msgid "The review min length must be shorter than the review max length."
 msgstr "Minimalna długość opinii musi być mniejsza niż maksymalna."
 
+#: free/src/Admin/SettingsValidator.php:45
 msgid "The length of reviews must be between 10 and 1000."
-msgstr "Długość opinii musi wynosić od 10 do 1000 znaków."
+msgstr "Długość opinii musi mieścić się w zakresie 10–1000."
 
+#: free/src/Admin/SettingsValidator.php:56
 msgid "Enter the blocked words."
 msgstr "Wprowadź zablokowane słowa."
 
+#: free/src/Admin/SettingsValidator.php:69
 msgid "Select JSON-LD Schema."
 msgstr "Wybierz JSON-LD Schema."
 
+#: free/src/Admin/SettingsValidator.php:82
 msgid "Settings saved."
-msgstr "Ustawienia zostały zapisane."
+msgstr "Ustawienia zapisane."
 
+#: free/src/Diagnostics/LogViewer.php:18 free/src/Diagnostics/LogViewer.php:19
+#: free/src/Diagnostics/LogViewer.php:39
 msgid "Logs"
 msgstr "Logi"
 
+#: free/src/Diagnostics/LogViewer.php:35
 msgid "Logs have been cleared."
 msgstr "Logi zostały wyczyszczone."
 
+#: free/src/Diagnostics/LogViewer.php:44
 msgid "Clear logs"
 msgstr "Wyczyść logi"
 
+#: free/src/Diagnostics/LogViewer.php:51
 msgid "No log file."
 msgstr "Brak pliku logów."
 
+#: free/src/Frontend/AjaxController.php:23
 msgid "No valid post ID"
-msgstr "Brak prawidłowego ID wpisu"
+msgstr "Nieprawidłowe ID wpisu"
 
+#: free/src/Frontend/AjaxController.php:29
 msgid "Post not found"
 msgstr "Nie znaleziono wpisu"
 
+#: free/src/Frontend/SpamGuard.php:48
 msgid "Please wait 5 minutes before adding another review."
-msgstr "Poczekaj 5 minut zanim dodasz kolejną opinię."
+msgstr "Odczekaj 5 minut przed dodaniem kolejnej opinii."
 
+#: free/src/Frontend/SpamGuard.php:65
 msgid "You have exceeded the limit of opinions added."
-msgstr "Przekroczyłeś limit dodawanych opinii."
+msgstr "Przekroczono limit dodawania opinii."
 
+#: free/src/Frontend/SpamGuard.php:84
 msgid "You can only post one review per day for this post."
-msgstr "Możesz opublikować tylko jedną opinię dla tego wpisu dziennie."
+msgstr "Możesz dodać tylko jedną opinię dziennie dla tego wpisu."
 
+#: free/src/Frontend/SpamGuard.php:99
 msgid "Spam protection"
 msgstr "Ochrona przed spamem"
 
+#: free/src/Shortcode/Renderer/AllShortcodeRenderer.php:51
+#: free/src/Shortcode/Renderer/FormShortcodeRenderer.php:39
+#: free/src/Shortcode/Renderer/ListShortcodeRenderer.php:42
+#: free/src/Shortcode/Renderer/RatingShortcodeRenderer.php:49
+#: free/src/Validation/OpinionValidator.php:54
 msgid "Invalid post ID."
 msgstr "Nieprawidłowe ID wpisu."
 
+#: free/src/Shortcode/Renderer/FormShortcodeRenderer.php:76
 msgid ""
 "Thank you for your opinion!\n"
 "Your review may require approval."
 msgstr ""
 "Dziękujemy za opinię!\n"
-"Twoja recenzja może wymagać zatwierdzenia."
+"Twoja opinia może wymagać zatwierdzenia."
 
+#: free/src/Shortcode/Renderer/ListShortcodeRenderer.php:107
 msgid "Load more opinions"
-msgstr "Załaduj więcej opinii"
+msgstr "Wczytaj więcej opinii"
 
+#: free/src/Shortcode/Renderer/ListShortcodeRenderer.php:110
 msgid "Show more"
 msgstr "Pokaż więcej"
 
+#: free/src/Shortcode/Renderer/RatingShortcodeRenderer.php:64
 msgid "Average rating:"
 msgstr "Średnia ocena:"
 
+#: free/src/Shortcode/Renderer/RatingShortcodeRenderer.php:67
 msgid "votes"
 msgstr "głosów"
 
+#: free/src/Validation/OpinionValidator.php:60
 msgid "Name contains invalid characters."
-msgstr "Imię zawiera nieprawidłowe znaki."
+msgstr "Imię zawiera niedozwolone znaki."
 
+#: free/src/Validation/OpinionValidator.php:66
 msgid "Enter your name (1-50)."
-msgstr "Wpisz swoje imię (1-50)."
+msgstr "Wprowadź swoje imię (1–50 znaków)."
 
+#: free/src/Validation/OpinionValidator.php:72
 msgid "Select your rating (1-5)."
-msgstr "Wybierz swoją ocenę (1-5)."
+msgstr "Wybierz ocenę (1–5)."
 
+#. translators: %1$d is the minimum length, %2$d is the maximum length of the opinion.
+#: free/src/Validation/OpinionValidator.php:79
+#, php-format
 msgid "Enter your opinion (%1$d-%2$d)."
-msgstr "Wpisz swoją opinię (%1$d-%2$d)."
+msgstr "Wprowadź swoją opinię (%1$d–%2$d znaków)."
 
+#: free/src/Validation/OpinionValidator.php:96
 msgid "Banned words found:"
-msgstr "Znaleziono zabronione słowa:"
+msgstr "Znaleziono zablokowane słowa:"
 
+#: free/views/field-blocked-words.php:7
 msgid "E.g. \"ugly, scam, spam\""
-msgstr "Np. „brzydki, oszustwo, spam”"
+msgstr "Np. \"brzydki, oszustwo, spam\""
 
+#: free/views/field-display-schema.php:7
 msgid "No JSON-LD Schema"
 msgstr "Brak JSON-LD Schema"
 
+#: free/views/field-display-schema.php:8
 msgid "Average rating only"
 msgstr "Tylko średnia ocena"
 
+#: free/views/field-display-schema.php:9
 msgid "Rating with opinions list"
 msgstr "Ocena z listą opinii"
 
+#: free/views/form-shortcode-renderer.php:12
 msgid "Your name:"
 msgstr "Twoje imię:"
 
+#: free/views/form-shortcode-renderer.php:17
 msgid "Your rating:"
 msgstr "Twoja ocena:"
 
+#: free/views/form-shortcode-renderer.php:38
 msgid "Your opinion:"
 msgstr "Twoja opinia:"
 
+#: free/views/form-shortcode-renderer.php:42
 msgid "Submit"
 msgstr "Wyślij"
 
+#: free/views/main-page.php:7
 msgid "Plugin shortcodes"
 msgstr "Shortcody wtyczki"
 
+#: free/views/main-page.php:8
 msgid "Use the shortcodes below to display review and rating modules on any page or post."
-msgstr "Użyj poniższych shortcode’ów, aby wyświetlić moduły opinii i ocen na dowolnej stronie lub wpisie."
+msgstr "Użyj poniższych shortcode'ów, aby wyświetlić moduły opinii i ocen na dowolnej stronie lub wpisie."
 
+#: free/views/main-page.php:12
 msgid "This shortcode displays the average review rating, number of votes, and stars."
 msgstr "Ten shortcode wyświetla średnią ocenę, liczbę głosów i gwiazdki."
 
+#: free/views/main-page.php:17
 msgid "Form"
 msgstr "Formularz"
 
+#: free/views/main-page.php:18
 msgid "This shortcode displays a form for adding reviews."
 msgstr "Ten shortcode wyświetla formularz dodawania opinii."
 
+#: free/views/main-page.php:23
 msgid "List"
 msgstr "Lista"
 
+#: free/views/main-page.php:24
 msgid "This shortcode displays a list of reviews added via a form."
 msgstr "Ten shortcode wyświetla listę opinii dodanych przez formularz."
 
+#: free/views/main-page.php:29
 msgid "Schema"
 msgstr "Schema"
 
+#: free/views/main-page.php:30
 msgid "This shortcode adds JSON-LD Schema."
 msgstr "Ten shortcode dodaje JSON-LD Schema."
 
-msgid "All in One"
+#: free/views/main-page.php:35
+msgid "All in one"
 msgstr "Wszystko w jednym"
 
+#: free/views/main-page.php:36
 msgid "Instead of adding all of the above, you can add just one shortcode to your post or page."
-msgstr "Zamiast dodawać wszystkie powyższe, możesz dodać jeden shortcode do wpisu lub strony."
+msgstr "Zamiast dodawać wszystkie powyższe, możesz dodać tylko jeden shortcode do wpisu lub strony."
 
-msgid "Custom Parameters"
+#: free/views/main-page.php:41
+msgid "Custom parameters"
 msgstr "Parametry niestandardowe"
 
+#: free/views/main-page.php:42
 msgid "E.g. for the \"opiner_me_rating\" shortcode you can provide \"post_id\", \"show_count\", and \"show_stars\"."
-msgstr "Np. dla shortcode’u „opiner_me_rating” możesz podać „post_id”, „show_count” i „show_stars”."
+msgstr "Np. dla shortcode'u \"opiner_me_rating\" możesz podać parametry \"post_id\", \"show_count\" i \"show_stars\"."
 
-msgid "Visit the Opiner.Me website"
-msgstr "Odwiedź stronę Opiner.Me"
+#: free/views/main-page.php:47
+msgid "Slider (PRO)"
+msgstr "Slider (PRO)"
 
+#: free/views/main-page.php:48
+msgid "This shortcode adds a slider anywhere in your post or page."
+msgstr "Ten shortcode dodaje slider w dowolnym miejscu wpisu lub strony."
+
+#: free/views/main-page.php:53
+msgid "Slider parameters (PRO)"
+msgstr "Parametry slidera (PRO)"
+
+#: free/views/main-page.php:54
+msgid "You can provide \"fade\", \"post_id\", \"max_words\", \"limit\", \"speed\", \"autoplay\", \"arrows\", and \"dots\" parameters."
+msgstr "Możesz podać parametry: \"fade\", \"post_id\", \"max_words\", \"limit\", \"speed\", \"autoplay\", \"arrows\" i \"dots\"."
+
+#: free/views/main-page.php:60
+msgid "The PRO version of the plugin gives you the following premium features: a review slider on your site, email notifications for new reviews, review importing and exporting, and advanced review editing. Click the link below to purchase the PRO license. Thanks for your support! :)"
+msgstr "Wersja PRO wtyczki oferuje następujące funkcje premium: slider opinii na stronie, powiadomienia e-mail o nowych opiniach, import i eksport opinii oraz zaawansowaną edycję opinii. Kliknij poniższy link, aby zakupić licencję PRO. Dziękujemy za wsparcie! :)"
+
+#: free/views/main-page.php:68
 msgid "Donate for Coffee"
 msgstr "Postaw kawę"
 
-msgid "Opiner Me"
-msgstr "Opiner Me"
+#: pro/src/Admin/Editor.php:18 pro/src/Admin/Editor.php:27
+msgid "Opiner Me PRO"
+msgstr "Opiner Me PRO"
 
-msgid "https://opiner.me"
-msgstr "https://opiner.me"
+#: pro/src/Admin/Editor.php:19
+msgid "PRO Features"
+msgstr "Funkcje PRO"
 
-msgid "Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema."
-msgstr "Prosta wtyczka do ocen gwiazdkowych i opinii z formularzem frontendowym, panelem administracyjnym i JSON-LD Schema."
+#: pro/src/Admin/EditReview.php:21 pro/src/Admin/EditReview.php:22
+#: pro/src/Admin/EditReview.php:89
+msgid "Edit Review"
+msgstr "Edytuj opinię"
 
-msgid "EEQSOFT"
-msgstr "EEQSOFT"
+#: pro/src/Admin/EditReview.php:66
+msgid "Review updated successfully."
+msgstr "Opinia została pomyślnie zaktualizowana."
 
-msgid "https://www.eeqsoft.com"
-msgstr "https://www.eeqsoft.com"
+#: pro/src/Admin/EditReview.php:104
+msgid "ID of the post or page associated with the review."
+msgstr "ID wpisu lub strony powiązanej z opinią."
+
+#: pro/src/Admin/EditReview.php:107
+msgid "Post Slug"
+msgstr "Slug wpisu"
+
+#: pro/src/Admin/EditReview.php:109
+msgid "Optional: enter slug and the system will find the ID itself."
+msgstr "Opcjonalnie: wprowadź slug, a system sam znajdzie ID."
+
+#: pro/src/Admin/EditReview.php:126
+msgid "Visible on site"
+msgstr "Widoczna na stronie"
+
+#: pro/src/Admin/EditReview.php:131
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
+
+#: pro/src/Admin/SettingsPro.php:20
+msgid "Email notifications (PRO)"
+msgstr "Powiadomienia e-mail (PRO)"
+
+#: pro/src/Admin/SettingsPro.php:27
+msgid "Turn on notifications"
+msgstr "Włącz powiadomienia"
+
+#: pro/src/Admin/SettingsPro.php:35
+msgid "Administrator's email address"
+msgstr "Adres e-mail administratora"
+
+#: pro/src/Admin/SettingsProValidator.php:25
+msgid "The PRO notification email address is invalid."
+msgstr "Adres e-mail powiadomień PRO jest nieprawidłowy."
+
+#. translators: %s: Site name
+#: pro/src/Notifications/Manager.php:28
+#, php-format
+msgid "New review on the website: %s"
+msgstr "Nowa opinia na stronie: %s"
+
+#: pro/src/Notifications/Manager.php:44
+msgid "Anonym"
+msgstr "Anonim"
+
+#: pro/views/button-export-reviews.php:7
+msgid "Export reviews (JSON)"
+msgstr "Eksport opinii (JSON)"
+
+#: pro/views/email-review-added.php:6
+msgid "A new review has been added"
+msgstr "Dodano nową opinię"
+
+#: pro/views/email-review-added.php:8
+msgid "Author:"
+msgstr "Autor:"
+
+#: pro/views/email-review-added.php:9
+msgid "Rating:"
+msgstr "Ocena:"
+
+#: pro/views/email-review-added.php:11
+msgid "Content of the opinion:"
+msgstr "Treść opinii:"
+
+#: pro/views/email-review-added.php:16
+msgid "See in the panel"
+msgstr "Zobacz w panelu"
+
+#: pro/views/form-import-reviews.php:10
+msgid "Import reviews"
+msgstr "Import opinii"

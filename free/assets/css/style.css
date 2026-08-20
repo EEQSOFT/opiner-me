@@ -1,0 +1,86 @@
+.opiner-me-rating {
+    margin-bottom: 20px;
+}
+
+.opiner-me-form {
+    width: 100%;
+}
+
+.opiner-me-form input[type="text"],
+.opiner-me-form input[type="email"],
+.opiner-me-form textarea,
+.opiner-me-form select {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    min-height: 2.4em;
+    margin-top: 0.3em;
+    padding: 0.3em 0.6em;
+    font-size: 1.1em;
+}
+
+.opiner-me-form label {
+    display: block;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+}
+
+.opiner-me-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.opiner-me-form input[type="submit"],
+a.opiner-me-load-more {
+    display: inline-block;
+    margin-top: 0.2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.opiner-me-form input[type="submit"].wp-element-button,
+a.opiner-me-load-more.wp-element-button {
+    /* none */
+}
+
+.opiner-me-list {
+    margin: 20px 0;
+}
+
+.opiner-me-opinion {
+    padding: 18px 0 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.opiner-me-stars {
+    color: gold;
+    font-size: 20px;
+}
+
+.opiner-me-rating-text {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.opiner-me-message,
+.opiner-me-success,
+.opiner-me-error {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.opiner-me-success {
+    border-color: #c3e6cb;
+    background: #d4edda;
+    color: #155724;
+}
+
+.opiner-me-error {
+    border-color: #f5c6cb;
+    background: #f8d7da;
+    color: #721c24;
+}

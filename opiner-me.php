@@ -5,7 +5,7 @@
  * Description:  Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema.
  * Author:       EEQSOFT
  * Author URI:   https://www.eeqsoft.com
- * Version:      1.1.0
+ * Version:      1.2.0
  * Requires PHP: 8.0
  * License:      GPLv2 or later
  * Text Domain:  opiner-me
@@ -19,23 +19,16 @@ define( 'OPINER_ME_PATH', plugin_dir_path( __FILE__ ) );
 define( 'OPINER_ME_FILE', __FILE__ );
 define( 'OPINER_ME_DIR', __DIR__ );
 
-spl_autoload_register(
-    function ( $class ) {
-        $prefix   = 'OpinerMe\\';
-        $base_dir = OPINER_ME_DIR . '/src/';
-        $length   = strlen( $prefix );
+require_once __DIR__ . '/free/Loader.php';
 
-        if ( strncmp( $prefix, $class, $length ) !== 0 ) {
-            return;
-        }
+$opiner_me_free_loader = new \OpinerMe\Free\Loader();
+$opiner_me_free_loader->init();
 
-        $relative_class = substr( $class, $length );
-        $file           = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
+$opiner_me_license_manager = new \OpinerMe\Admin\LicenseManager;
 
-        if ( file_exists( $file ) ) {
-            require $file;
-        }
-    }
-);
+if ( $opiner_me_license_manager::is_pro_active() ) {
+    require_once __DIR__ . '/pro/Loader.php';
 
-new OpinerMe\Plugin\Plugin();
+    $opiner_me_pro_loader = new \OpinerMe\Pro\Loader();
+    $opiner_me_pro_loader->init();
+}

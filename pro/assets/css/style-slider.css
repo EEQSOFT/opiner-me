@@ -1,0 +1,130 @@
+.opiner-me-slider-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.opiner-me-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 120px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity .2s ease;
+    touch-action: pan-y;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.opiner-me-slider.ready {
+    opacity: 1;
+}
+
+.opiner-me-slider-track {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.opiner-me-slide {
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+
+.opiner-me-slide-inner {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.opiner-me-slide,
+.opiner-me-slide-inner {
+    transform: translate3d(0, 0, 0);
+    will-change: opacity, transform;
+}
+
+.opiner-me-slide-rating {
+    margin-bottom: 1px;
+}
+
+.opiner-me-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40px);
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.opiner-me-slider-arrow:hover {
+    background: #f7f7f7;
+}
+
+.opiner-me-slider-arrow.prev {
+    left: 10px;
+}
+
+.opiner-me-slider-arrow.next {
+    right: 10px;
+}
+
+.opiner-me-slider-dots {
+    position: relative;
+    margin-top: 5px;
+    text-align: center;
+    z-index: 5;
+}
+
+.opiner-me-slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background .2s ease, opacity .2s ease;
+}
+
+.opiner-me-slider-dot.active {
+    background: #333;
+}
+
+.opiner-me-fade-mode .opiner-me-slider-track {
+    display: block;
+    position: relative;
+}
+
+.opiner-me-fade-mode .opiner-me-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.92);
+    filter: blur(2px);
+    transition: opacity 0.7s ease, transform 0.7s ease, filter 0.7s ease;
+    will-change: opacity, transform, filter;
+    pointer-events: none;
+}
+
+.opiner-me-fade-mode .opiner-me-slide.active {
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    pointer-events: auto;
+}
