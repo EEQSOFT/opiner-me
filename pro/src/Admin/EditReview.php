@@ -6,6 +6,8 @@ namespace OpinerMe\Pro\Admin;
 
 defined( 'ABSPATH' ) || exit;
 
+use OpinerMe\Service\RatingService;
+
 class EditReview {
 
     public function init(): void {
@@ -226,6 +228,8 @@ class EditReview {
             array( '%d' )
         );
         // phpcs:enable
+
+        RatingService::update( $post_id );
 
         wp_safe_redirect(
             add_query_arg(

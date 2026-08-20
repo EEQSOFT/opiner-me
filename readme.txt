@@ -6,9 +6,9 @@ Contributors: eeqsoft
 Donate link: https://www.paypal.me/WEBEEQ
 Tags: rating, star-rating, reviews, review-form, json-ld
 Requires at least: 6.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 8.0
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,7 +55,7 @@ Perfect for blogs, service pages, portfolios, and any website that needs quick, 
 [opiner_me_form] – display only the opinion form  
 [opiner_me_list] – display submitted reviews  
 [opiner_me_rating] – display average rating  
-[opiner_me_schema] – output JSON-LD schema  
+[opiner_me_schema] – output JSON‑LD schema  
 [opiner_me_slider] – display a rotating slider with user opinions (PRO)
 
 == Opiner Me PRO ==
@@ -75,7 +75,7 @@ Shows how to install and use Opiner Me in under 3 minutes.
 == Installation ==
 1. Upload the plugin files to `/wp-content/plugins/opiner-me/` or install via the WordPress plugins screen.
 2. Activate the plugin through the “Plugins” screen.
-3. Place the `[opiner_me]` shortcode in any post or page to display the opinion form and review list.
+3. Place the `[opiner_me]` shortcode in any post or page to display the star rating, opinion form, review list, and JSON‑LD schema.
 
 == Screenshots ==
 1. Opinion form with star rating and feedback fields.
@@ -86,6 +86,7 @@ Shows how to install and use Opiner Me in under 3 minutes.
 6. Automatically generated JSON-LD review schema.
 7. Admin panel showing submitted reviews and ratings.
 8. Lightweight settings panel with essential options.
+9. Rotating slider with user opinions (PRO).
 
 == Frequently Asked Questions ==
 = Can I customize the opinion form or star rating? =
@@ -119,6 +120,10 @@ Opiner Me is optimized for speed and minimal footprint:
 * Zero impact on Core Web Vitals.
 
 == Changelog ==
+= 1.2.1 =
+* Fixed: Average rating after review editing.
+* Fixed: Number of votes after review editing.
+
 = 1.2.0 =
 * Added (PRO): Opinion slider module for displaying reviews in a rotating carousel.
 * Added (PRO): Email notifications for new submitted opinions/ratings.
@@ -148,7 +153,7 @@ Opiner Me is optimized for speed and minimal footprint:
 * Initial release with opinion form, star rating, review list, JSON-LD schema, SpamGuard, and shortcode support.
 
 == Compatibility ==
-* Tested with WordPress 6.0-6.9.
+* Tested with WordPress 6.0‑7.0.
 * Requires PHP 8.0 or higher.
 * Works with any theme.
 * Compatible with Classic Editor and Gutenberg.
@@ -157,6 +162,9 @@ Opiner Me is optimized for speed and minimal footprint:
 Opiner Me does not collect or transmit any personal data to external servers. All submitted opinions and ratings remain in your WordPress database.
 
 == Upgrade Notice ==
+= 1.2.1 =
+Fixes star rating widget with average rating and votes.
+
 = 1.2.0 =
 Adds opinion slider, email notifications, import/export tools, advanced editor, and license validation. Recommended update for all users.
 

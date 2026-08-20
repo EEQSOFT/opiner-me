@@ -5,7 +5,7 @@
  * Description:  Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema.
  * Author:       EEQSOFT
  * Author URI:   https://www.eeqsoft.com
- * Version:      1.2.0
+ * Version:      1.2.1
  * Requires PHP: 8.0
  * License:      GPLv2 or later
  * Text Domain:  opiner-me
