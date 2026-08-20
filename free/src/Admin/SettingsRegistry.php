@@ -9,6 +9,8 @@ defined( 'ABSPATH' ) || exit;
 class SettingsRegistry {
 
     public function register(): void {
+        $this->register_settings_link();
+
         $validator = new SettingsValidator;
         $renderer  = new FieldRenderer();
 
@@ -76,5 +78,20 @@ class SettingsRegistry {
         );
 
         do_action( 'opiner_me/settings/register_sections' );
+    }
+
+    private function register_settings_link(): void {
+        add_filter(
+            'plugin_action_links_' . plugin_basename( OPINER_ME_FILE ),
+            array( $this, 'settings_link' )
+        );
+    }
+
+    public function settings_link( array $links ): array {
+        $settings_link = '<a href="admin.php?page=opiner-me-settings">' . __( 'Settings', 'opiner-me' ) . '</a>';
+
+        array_unshift( $links, $settings_link );
+
+        return $links;
     }
 }

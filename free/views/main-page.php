@@ -65,6 +65,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     </div>
 
     <div class="opiner-me-admin-orange-button">
-        <a href="https://www.paypal.me/WEBEEQ" target="_blank">☕ <?php esc_html_e( 'Donate for Coffee', 'opiner-me' ); ?></a>
+        <a href="https://buymeacoffee.com/webeeq" target="_blank">☕ <?php esc_html_e( 'Donate for Coffee', 'opiner-me' ); ?></a>
     </div>
 </div>

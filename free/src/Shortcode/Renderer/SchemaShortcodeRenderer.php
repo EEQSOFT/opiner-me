@@ -65,7 +65,7 @@ class SchemaShortcodeRenderer implements ShortcodeHandlerInterface {
             // phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- safe SELECT query on custom table, no caching needed
             $rating = $wpdb->get_row(
                 $wpdb->prepare(
-                    "SELECT rating_average, rating_count FROM `{$table_name}` WHERE post_id = %d",
+                    "SELECT rating_average, rating_count FROM `{$table_name}` WHERE post_id = %d AND rating_count > 0",
                     $post_id
                 )
             );

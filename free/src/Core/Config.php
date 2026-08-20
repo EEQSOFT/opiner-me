@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 
 class Config {
 
-    public const VERSION                = '1.2.1';
+    public const VERSION                = '1.2.2';
     public const ASSETS_VERSION         = self::VERSION;
     public const OPTION_DB_VERSION      = 'opiner_me_db_version';
     public const LICENSE_API            = 'https://api.opiner.me/api/license-api.php';

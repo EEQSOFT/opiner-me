@@ -1,18 +1,17 @@
-=== Opiner Me ===
+=== Opiner Me – Lightweight Star Rating & Review Form ===
 Plugin URI: https://opiner.me
-Author: eeqsoft
-Author URI: https://www.eeqsoft.com
+Author: Opiner Me
+Author URI: https://opiner.me
 Contributors: eeqsoft
-Donate link: https://www.paypal.me/WEBEEQ
 Tags: rating, star-rating, reviews, review-form, json-ld
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Opiner Me – Feedback & Star Rating Plugin. Lightweight opinion form with star rating, shortcode support, spam protection, and JSON-LD schema markup.
+Fast and lightweight star rating and review form with shortcode support, spam protection, and JSON‑LD schema markup.
 
 == Description ==
 Opiner Me is a lightweight WordPress plugin for adding star ratings, collecting user reviews, and displaying a simple opinion form anywhere on your site. It includes SEO-friendly JSON-LD review schema, built-in spam protection, and clean shortcodes for maximum flexibility.
@@ -22,6 +21,7 @@ Perfect for blogs, service pages, portfolios, and any website that needs quick, 
 **Official website:** <a href="https://opiner.me">Opiner Me WP Plugin</a>
 **Live demo:** <a href="https://opiner.me/live-demo">Check it out here</a>
 **Installation video:** <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a>
+**Donate link:** <a href="https://buymeacoffee.com/webeeq">Buy Me a Coffee</a>
 
 == Features ==
 * Lightweight star rating and review plugin.
@@ -120,9 +120,12 @@ Opiner Me is optimized for speed and minimal footprint:
 * Zero impact on Core Web Vitals.
 
 == Changelog ==
+= 1.2.2 =
+* Fixed: JSON-LD schema now appears only when at least one approved review exists. Previously, the schema was displayed even when total votes and average rating were zero (e.g., after adding and removing a rating or submitting a review without approval).
+
 = 1.2.1 =
-* Fixed: Average rating after review editing.
-* Fixed: Number of votes after review editing.
+* Fixed: Average rating calculation after editing a review.
+* Fixed: Vote count recalculation after editing a review.
 
 = 1.2.0 =
 * Added (PRO): Opinion slider module for displaying reviews in a rotating carousel.
@@ -162,6 +165,9 @@ Opiner Me is optimized for speed and minimal footprint:
 Opiner Me does not collect or transmit any personal data to external servers. All submitted opinions and ratings remain in your WordPress database.
 
 == Upgrade Notice ==
+= 1.2.2 =
+Fixes incorrect JSON-LD output when no approved reviews exist.
+
 = 1.2.1 =
 Fixes star rating widget with average rating and votes.
 

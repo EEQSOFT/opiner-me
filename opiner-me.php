@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:  Opiner Me
- * Plugin URI:   https://opiner.me
- * Description:  Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema.
- * Author:       EEQSOFT
- * Author URI:   https://www.eeqsoft.com
- * Version:      1.2.1
+ * Plugin Name: Opiner Me – Lightweight Star Rating & Review Form
+ * Plugin URI: https://opiner.me
+ * Description: Simple star rating & opinions plugin with frontend form, admin panel, and JSON-LD Schema.
+ * Author: Opiner Me
+ * Author URI: https://opiner.me
+ * Version: 1.2.2
  * Requires PHP: 8.0
- * License:      GPLv2 or later
- * Text Domain:  opiner-me
- * Domain Path:  /languages
+ * License: GPLv2 or later
+ * Text Domain: opiner-me
+ * Domain Path: /languages
  */
 
 defined( 'ABSPATH' ) || exit;
