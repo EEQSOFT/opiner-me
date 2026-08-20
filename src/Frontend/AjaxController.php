@@ -55,10 +55,10 @@ class AjaxController {
 
         foreach ( $opinions as $op ) {
             $html  = '<div class="opiner-me-opinion">';
-            $html .= '<strong>' . esc_html( $op->opinion_author ) . '</strong>';
+            $html .= '<strong>' . esc_html( wp_unslash( $op->opinion_author ) ) . '</strong>';
             $html .= '<span class="opiner-me-stars"> ' . esc_html( str_repeat( '⭐', intval( $op->opinion_rating ) ) ) . '</span>';
             $html .= '<span> (' . intval( $op->opinion_rating ) . ')</span>';
-            $html .= '<p>' . nl2br( esc_html( $op->opinion_content ) ) . '</p>';
+            $html .= '<p>' . nl2br( esc_html( wp_unslash( $op->opinion_content ) ) ) . '</p>';
             $html .= '<small>' . esc_html( $op->opinion_date ) . '</small>';
             $html .= '</div>';
 

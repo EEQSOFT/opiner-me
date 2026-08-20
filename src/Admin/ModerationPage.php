@@ -197,9 +197,9 @@ class ModerationPage {
             echo '<tr>';
             echo '<td>' . esc_html( $id ) . '</td>';
             echo '<td><a href="' . esc_url( get_permalink( $post ) ) . '">' . esc_html( $post ) . '</a></td>';
-            echo '<td>' . esc_html( $op->opinion_author ) . '</td>';
+            echo '<td>' . esc_html( wp_unslash( $op->opinion_author ) ) . '</td>';
             echo '<td>' . esc_html( str_repeat( '⭐', intval( $op->opinion_rating ) ) ) . ' (' . intval( $op->opinion_rating ) . ')</td>';
-            echo '<td>' . nl2br( esc_html( $op->opinion_content ) ) . '</td>';
+            echo '<td>' . nl2br( esc_html( wp_unslash( $op->opinion_content ) ) ) . '</td>';
             echo '<td>' . esc_html( $op->opinion_ip ) . '</td>';
             echo '<td>' . esc_html( $op->opinion_date ) . '</td>';
 

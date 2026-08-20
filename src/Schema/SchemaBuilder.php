@@ -32,10 +32,10 @@ class SchemaBuilder {
                 '@type'  => 'Review',
                 'author' => array(
                     '@type' => 'Person',
-                    'name'  => $op->opinion_author ?: 'Anonymous'
+                    'name'  => wp_unslash( $op->opinion_author ) ?: 'Anonymous'
                 ),
                 'datePublished' => gmdate( 'Y-m-d', strtotime( $op->opinion_date ) ),
-                'reviewBody'    => wp_trim_words( $op->opinion_content, 50, '...' ),
+                'reviewBody'    => wp_trim_words( wp_unslash( $op->opinion_content ), 50, '...' ),
                 'reviewRating'  => array(
                     '@type'       => 'Rating',
                     'ratingValue' => $op->opinion_rating,

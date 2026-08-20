@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     <p>
         <label><?php esc_html_e( 'Your name:', 'opiner-me' ); ?><br />
-        <input type="text" name="om_author" value="<?php echo esc_attr( $prefill['om_author'] ); ?>" required /></label>
+        <input type="text" name="om_author" value="<?php echo esc_attr( wp_unslash( $prefill['om_author'] ) ); ?>" required /></label>
     </p>
 
     <p>
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     <p>
         <label><?php esc_html_e( 'Your opinion:', 'opiner-me' ); ?><br />
-        <textarea name="om_content" required><?php echo esc_textarea( $prefill['om_content'] ); ?></textarea></label>
+        <textarea name="om_content" required><?php echo esc_textarea( wp_unslash( $prefill['om_content'] ) ); ?></textarea></label>
     </p>
 
     <p><button type="submit" name="om_submit"><?php esc_html_e( 'Submit', 'opiner-me' ); ?></button></p>
