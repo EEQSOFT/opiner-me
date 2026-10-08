@@ -18,7 +18,7 @@ Opiner Me is a lightweight WordPress plugin for adding star ratings, collecting 
 
 Perfect for blogs, service pages, portfolios, and any website that needs quick, minimal, and fast-loading feedback tools.
 
-**Official website:** <a href="https://opiner.me">Opiner Me WP Plugin</a> 
+**Official website:** <a href="https://opiner.me">Opiner Me</a> 
 **Live demo:** <a href="https://opiner.me/live-demo">Check it out here</a> 
 **Installation video:** <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a> 
 **Donate link:** <a href="https://buymeacoffee.com/webeeq">Buy Me a Coffee</a> 
