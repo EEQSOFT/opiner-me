@@ -21,8 +21,8 @@
     min-width: 100%;
     min-height: 2.4em;
     margin-top: 0.3em;
-    padding: 0.2em 0.6em 0.4em 0.6em;
-    font-size: 1.1em;
+    padding: 0.3em 0.6em;
+    font-size: 1.0em;
 }
 
 .opiner-me-form select.opiner-me-stars {
@@ -34,8 +34,6 @@
 
 .opiner-me-form textarea {
     min-height: 200px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
     resize: vertical;
 }
 
