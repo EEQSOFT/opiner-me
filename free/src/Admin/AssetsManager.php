@@ -26,6 +26,13 @@ class AssetsManager {
         }
 
         wp_enqueue_style(
+            'opiner-me-stars-style',
+            OPINER_ME_URL . 'free/assets/css/style-stars.css',
+            array(),
+            Config::ASSETS_VERSION
+        );
+
+        wp_enqueue_style(
             'opiner-me-admin-style',
             OPINER_ME_URL . 'free/assets/css/style-admin.css',
             array(),

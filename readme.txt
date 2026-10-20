@@ -7,7 +7,7 @@ Tags: rating, star-rating, reviews, review-form, json-ld
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.2.2
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,6 +120,9 @@ Opiner Me is optimized for speed and minimal footprint:
 * Zero impact on Core Web Vitals.
 
 == Changelog ==
+= 1.3.0 =
+* Added: Multiple display styles for star ratings.
+
 = 1.2.2 =
 * Fixed: JSON‑LD schema now appears only when at least one approved review exists. Previously, the schema was displayed even when total votes and average rating were zero (e.g., after adding and removing a rating or submitting a review without approval).
 
@@ -165,6 +168,9 @@ Opiner Me is optimized for speed and minimal footprint:
 Opiner Me does not collect or transmit any personal data to external servers. All submitted opinions and ratings remain in your WordPress database.
 
 == Upgrade Notice ==
+= 1.3.0 =
+Adds multiple display styles for star ratings.
+
 = 1.2.2 =
 Fixes incorrect JSON‑LD output when no approved reviews exist.
 

@@ -83,9 +83,11 @@ class ListShortcodeRenderer implements ShortcodeHandlerInterface {
 
         foreach ( $opinions as $op ) {
             echo '<div class="opiner-me-opinion">';
-            echo '<strong>' . esc_html( $op->opinion_author ) . '</strong>';
-            echo '<span class="opiner-me-stars"> ' . esc_html( str_repeat( '⭐', intval( $op->opinion_rating ) ) ) . '</span>';
-            echo '<span> (' . intval( $op->opinion_rating ) . ')</span>';
+            echo '<strong>' . esc_html( $op->opinion_author ) . '</strong> ';
+            echo '<span class="opiner-me-stars">';
+            echo '<span class="opiner-me-star opiner-me-star-full">' . esc_html( str_repeat( '★', intval( $op->opinion_rating ) ) ) . '</span>';
+            echo '<span class="opiner-me-star opiner-me-star-empty">' . esc_html( str_repeat( '★', intval( 5 - $op->opinion_rating ) ) ) . '</span>';
+            echo '</span>';
             echo '<p>' . nl2br( esc_html( $op->opinion_content ) ) . '</p>';
             echo '<small>' . esc_html( $op->opinion_date ) . '</small>';
             echo '</div>';

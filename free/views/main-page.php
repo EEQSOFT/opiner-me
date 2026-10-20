@@ -41,6 +41,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <h2><?php esc_html_e( 'Custom parameters', 'opiner-me' ); ?></h2>
         <p><?php esc_html_e( 'E.g. for the "opiner_me_rating" shortcode you can provide "post_id", "show_count", and "show_stars".', 'opiner-me' ); ?></p>
         <code>[opiner_me_rating post_id="19" show_count="true" show_stars="true"]</code>
+        <code>[opiner_me_rating style="classic"]</code>
+        <code>[opiner_me_rating style="inline"]</code>
+        <code>[opiner_me_rating style="inline_extended"]</code>
+        <code>[opiner_me_rating style="minimal"]</code>
+        <code>[opiner_me_rating style="stars_only"]</code>
     </div>
 
     <div class="opiner-me-admin-info-box">

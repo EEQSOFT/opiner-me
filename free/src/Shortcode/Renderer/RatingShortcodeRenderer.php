@@ -38,7 +38,8 @@ class RatingShortcodeRenderer implements ShortcodeHandlerInterface {
             'post_id'    => $post->ID ?? 0,
             'show_count' => true,
             'show_stars' => true,
-            'theme'      => 'stars'
+            'theme'      => 'stars',
+            'style'      => 'classic'
         ), $atts, 'opiner_me_rating' );
 
         $post_id = intval( $atts['post_id'] );
@@ -54,21 +55,58 @@ class RatingShortcodeRenderer implements ShortcodeHandlerInterface {
 
         $data = $this->rating_service->get( $post_id );
 
-        $output = '<div class="opiner-me-rating">';
+        $output = '';
 
-        if ( $show_stars ) {
-            $output .= $this->rating_renderer->render_stars( $data['average'] );
+        switch ( $atts['style'] ) {
+            case 'inline':
+                $output .= '<span class="opiner-me-rating-inline">';
+                $output .= number_format( floatval( $data['average'] ), 2, '.', '' ) . ' ';
+                $output .= $this->rating_renderer->render_stars( $data['average'] );
+                $output .= ' (' . intval( $data['count'] ) . ')';
+                $output .= '</span>';
+
+                break;
+            case 'inline_extended':
+                $output .= '<span class="opiner-me-rating-inline_extended">';
+                $output .= number_format( floatval( $data['average'] ), 2, '.', '' ) . ' / 5 ';
+                $output .= $this->rating_renderer->render_stars( $data['average'] );
+                $output .= ' (' . intval( $data['count'] ) . ')';
+                $output .= '</span>';
+
+                break;
+            case 'minimal':
+                $output .= '<span class="opiner-me-rating-minimal">';
+                $output .= number_format( floatval( $data['average'] ), 2, '.', '' ) . ' ';
+                $output .= '<span class="opiner-me-stars">★</span>';
+                $output .= ' (' . intval( $data['count'] ) . ')';
+                $output .= '</span>';
+
+                break;
+            case 'stars_only':
+                $output .= '<span class="opiner-me-rating-stars_only">';
+                $output .= $this->rating_renderer->render_stars( $data['average'] );
+                $output .= '</span>';
+
+                break;
+            default:
+                $output .= '<div class="opiner-me-rating">';
+
+                if ( $show_stars ) {
+                    $output .= $this->rating_renderer->render_stars( $data['average'] );
+                }
+
+                $output .= '<div class="opiner-me-rating-text">';
+                $output .= esc_html__( 'Average rating:', 'opiner-me' ) . ' ' . number_format( floatval( $data['average'] ), 2, '.', '' ) . ' / 5';
+
+                if ( $show_count ) {
+                    $output .= ' (' . intval( $data['count'] ) . ' ' . esc_html__( 'votes', 'opiner-me' ) . ')';
+                }
+
+                $output .= '</div>';
+                $output .= '</div>';
+
+                break;
         }
-
-        $output .= '<div class="opiner-me-rating-text">';
-        $output .= esc_html__( 'Average rating:', 'opiner-me' ) . ' ' . floatval( $data['average'] ) . ' / 5';
-
-        if ( $show_count ) {
-            $output .= ' (' . intval( $data['count'] ) . ' ' . esc_html__( 'votes', 'opiner-me' ) . ')';
-        }
-
-        $output .= '</div>';
-        $output .= '</div>';
 
         return $output;
     }

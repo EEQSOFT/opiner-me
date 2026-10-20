@@ -1,0 +1,31 @@
+.opiner-me-stars {
+    color: #f5b301;
+    font-size: 20px;
+}
+
+.opiner-me-star {
+    position: relative;
+    display: inline-block;
+}
+
+.opiner-me-star-full {
+    color: #f5b301;
+}
+
+.opiner-me-star-empty {
+    color: #d5d5d5;
+}
+
+.opiner-me-star-half {
+    color: #d5d5d5;
+}
+
+.opiner-me-star-half::before {
+    content: '★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #f5b301;
+}

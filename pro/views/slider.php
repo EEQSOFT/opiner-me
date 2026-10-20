@@ -12,8 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <?php foreach ( $opinions as $opiner_me_op ) { ?>
                 <div class="opiner-me-slide">
                     <div class="opiner-me-slide-inner">
-                        <div class="opiner-me-slide-rating">
-                            <?php echo esc_html( str_repeat( '⭐', intval( $opiner_me_op->opinion_rating ) ) ); ?>
+                        <div class="opiner-me-slide-rating opiner-me-stars">
+                            <?php
+                            echo '<span class="opiner-me-star opiner-me-star-full">' . esc_html( str_repeat( '★', intval( $opiner_me_op->opinion_rating ) ) ) . '</span>';
+                            echo '<span class="opiner-me-star opiner-me-star-empty">' . esc_html( str_repeat( '★', intval( 5 - $opiner_me_op->opinion_rating ) ) ) . '</span>';
+                            ?>
                         </div>
 
                         <div class="opiner-me-slide-content">

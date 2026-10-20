@@ -55,9 +55,11 @@ class AjaxController {
 
         foreach ( $opinions as $op ) {
             $html  = '<div class="opiner-me-opinion">';
-            $html .= '<strong>' . esc_html( $op->opinion_author ) . '</strong>';
-            $html .= '<span class="opiner-me-stars"> ' . esc_html( str_repeat( '⭐', intval( $op->opinion_rating ) ) ) . '</span>';
-            $html .= '<span> (' . intval( $op->opinion_rating ) . ')</span>';
+            $html .= '<strong>' . esc_html( $op->opinion_author ) . '</strong> ';
+            $html .= '<span class="opiner-me-stars">';
+            $html .= '<span class="opiner-me-star opiner-me-star-full">' . esc_html( str_repeat( '★', intval( $op->opinion_rating ) ) ) . '</span>';
+            $html .= '<span class="opiner-me-star opiner-me-star-empty">' . esc_html( str_repeat( '★', intval( 5 - $op->opinion_rating ) ) ) . '</span>';
+            $html .= '</span>';
             $html .= '<p>' . nl2br( esc_html( $op->opinion_content ) ) . '</p>';
             $html .= '<small>' . esc_html( $op->opinion_date ) . '</small>';
             $html .= '</div>';

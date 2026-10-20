@@ -237,7 +237,10 @@ class ModerationPage {
             echo '<td>' . esc_html( $id ) . '</td>';
             echo '<td><a href="' . esc_url( get_permalink( $post ) ) . '">' . esc_html( $post ) . '</a></td>';
             echo '<td>' . esc_html( $op->opinion_author ) . '</td>';
-            echo '<td>' . esc_html( str_repeat( '⭐', intval( $op->opinion_rating ) ) ) . ' (' . intval( $op->opinion_rating ) . ')</td>';
+            echo '<td class="opiner-me-stars">';
+            echo '<span class="opiner-me-star opiner-me-star-full">' . esc_html( str_repeat( '★', intval( $op->opinion_rating ) ) ) . '</span>';
+            echo '<span class="opiner-me-star opiner-me-star-empty">' . esc_html( str_repeat( '★', intval( 5 - $op->opinion_rating ) ) ) . '</span>';
+            echo '</td>';
             echo '<td>' . nl2br( esc_html( $op->opinion_content ) ) . '</td>';
             echo '<td>' . esc_html( $op->opinion_ip ) . '</td>';
             echo '<td>' . esc_html( $op->opinion_date ) . '</td>';

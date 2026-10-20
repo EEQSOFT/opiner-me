@@ -26,14 +26,21 @@ class SliderAssets {
         }
 
         wp_enqueue_style(
-            'opiner-me-slider',
+            'opiner-me-stars-style',
+            OPINER_ME_URL . 'free/assets/css/style-stars.css',
+            array(),
+            Config::ASSETS_VERSION
+        );
+
+        wp_enqueue_style(
+            'opiner-me-slider-style',
             OPINER_ME_URL . 'pro/assets/css/style-slider.css',
             array(),
             Config::ASSETS_VERSION
         );
 
         wp_enqueue_script(
-            'opiner-me-slider',
+            'opiner-me-slider-script',
             OPINER_ME_URL . 'pro/assets/js/script-slider.js',
             array(),
             Config::ASSETS_VERSION,

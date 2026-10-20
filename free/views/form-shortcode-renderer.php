@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     <p>
         <label><?php esc_html_e( 'Your rating:', 'opiner-me' ); ?><br />
-        <select name="om_rating" required>
+        <select class="opiner-me-stars" name="om_rating" required>
             <option value="0">&nbsp;</option>
 
             <?php
@@ -23,11 +23,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
             for ( $opiner_me_i = 1; $opiner_me_i <= 5; $opiner_me_i++ ) {
                 printf(
-                    '<option value="%d" %s>%s (%d)</option>',
+                    '<option class="opiner-me-stars" value="%d" %s>%s%s</option>',
                     esc_html( $opiner_me_i ),
                     selected( $opiner_me_saved_rating, $opiner_me_i, false ),
-                    esc_html( str_repeat( '⭐', $opiner_me_i ) ),
-                    esc_html( $opiner_me_i )
+                    esc_html( str_repeat( '★', $opiner_me_i ) ),
+                    esc_html( str_repeat( '☆', 5 - $opiner_me_i ) )
                 );
             }
             ?>

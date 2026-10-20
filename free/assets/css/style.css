@@ -2,6 +2,12 @@
     margin-bottom: 20px;
 }
 
+.opiner-me-rating-text {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
 .opiner-me-form {
     width: 100%;
 }
@@ -15,19 +21,24 @@
     min-width: 100%;
     min-height: 2.4em;
     margin-top: 0.3em;
-    padding: 0.3em 0.6em;
-    font-size: 1.1em;
+    padding: 0.2em 0.6em 0.3em 0.6em;
+    font-size: 1.2em;
+}
+
+.opiner-me-form select.opiner-me-stars {
+    min-height: 2.2em;
+    font-size: 1.4em;
+}
+
+.opiner-me-form textarea {
+    min-height: 200px;
+    resize: vertical;
 }
 
 .opiner-me-form label {
     display: block;
     margin-bottom: 0.4em;
     font-weight: 600;
-}
-
-.opiner-me-form textarea {
-    min-height: 200px;
-    resize: vertical;
 }
 
 .opiner-me-form input[type="submit"],
@@ -50,17 +61,6 @@ a.opiner-me-load-more.wp-element-button {
 .opiner-me-opinion {
     padding: 18px 0 8px 0;
     border-bottom: 1px solid #ddd;
-}
-
-.opiner-me-stars {
-    color: gold;
-    font-size: 20px;
-}
-
-.opiner-me-rating-text {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
 }
 
 .opiner-me-message,
