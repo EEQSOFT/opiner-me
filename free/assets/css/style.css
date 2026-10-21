@@ -47,6 +47,7 @@
 a.opiner-me-load-more {
     display: inline-block;
     margin-top: 0.2em;
+    margin-bottom: 10px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -57,7 +58,7 @@ a.opiner-me-load-more.wp-element-button {
 }
 
 .opiner-me-list {
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
 }
 
 .opiner-me-opinion {
