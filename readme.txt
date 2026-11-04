@@ -22,6 +22,7 @@ Perfect for blogs, service pages, portfolios, and any website that needs quick, 
 **Live demo:** <a href="https://opiner.me/live-demo">Check it out here</a> 
 **Installation video:** <a href="https://www.youtube.com/watch?v=xW6uvR4Z0Y4">Watch on YouTube</a> 
 **Donate link:** <a href="https://buymeacoffee.com/webeeq">Buy Me a Coffee</a> 
+**Donate link:** <a href="https://www.paypal.me/webeeq">Donate on PayPal</a> 
 
 == Features ==
 * Lightweight star rating and review plugin.
